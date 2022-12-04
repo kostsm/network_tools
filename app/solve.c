@@ -21,6 +21,7 @@ solves solve (double a, double b, char operation)
         else
             answer.result = a / b;
     }
+    
     printf("%s", answer.message);
     return answer;
 }
