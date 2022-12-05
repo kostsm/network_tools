@@ -15,7 +15,7 @@ solves solve (double a, double b, char operation)
     if (operation == '*')
         answer.result = a * b;
     if (operation == '^')
-        answer.result = pow(a,b); /// \TODO сделать тесты
+        answer.result = pow(a,b);
     if (operation == '/')
     {
         if (b == 0)

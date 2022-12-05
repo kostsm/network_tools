@@ -107,4 +107,15 @@ TEST(multiple, test2)
     EXPECT_STREQ(text.c_str(), output.c_str());
 }
 
+TEST(power, test1)
+{
+    std::string output = "ok";
+    testing::internal::CaptureStdout();
+    solves s = solve(2, 2, '^');
+    EXPECT_NEAR(s.result, 4.0, 0.000001);
+
+    std::string text = testing::internal::GetCapturedStdout();
+    EXPECT_STREQ(text.c_str(), output.c_str());
+}
+
 #endif // TEST_SOLVE_H
