@@ -14,6 +14,8 @@ solves solve (double a, double b, char operation)
         answer.result = a - b;
     if (operation == '*')
         answer.result = a * b;
+    if (operation == '^')
+        answer.result = pow(a,b);
     if (operation == '/')
     {
         if (b == 0)
